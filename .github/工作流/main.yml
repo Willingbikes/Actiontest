@@ -5,6 +5,10 @@ on:
     # * is a special character in YAML so you have to quote this string.
     # /30 denotes that it will run once every 30 minutes
     - cron:  '*/30 * * * *'
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   pinger_job:
