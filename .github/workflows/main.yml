@@ -15,7 +15,7 @@ jobs:
     name: A job to ping
     runs-on: ubuntu-latest
     env:
-      URL: ${{ secrets.WEB }}
+      URL: ${{ secrets.WILLINGBIKES }}
       METHOD: GET  # the method used to make the request. It is GET by default
     steps:
       - id: ping
