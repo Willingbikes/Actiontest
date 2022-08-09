@@ -12,7 +12,7 @@ jobs:
     name: A job to ping
     runs-on: ubuntu-latest
     env:
-      URL: ${{ http://www.willingbikes.com }}
+      URL: ${{ https://www.willingbikes.com }}
       METHOD: GET 
     steps:
       - id: ping
