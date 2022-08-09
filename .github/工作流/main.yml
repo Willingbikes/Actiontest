@@ -1,9 +1,6 @@
 name: Scheduled Ping
-# This workflow is triggered at a scheduled interval of every 30 minutes
 on:
   schedule:
-    # * is a special character in YAML so you have to quote this string.
-    # /30 denotes that it will run once every 30 minutes
     - cron:  '*/30 * * * *'
   push:
     branches: [ "main" ]
@@ -16,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       URL: ${{ www.willingbikes.com }}
-      METHOD: GET  # the method used to make the request. It is GET by default
+      METHOD: GET 
     steps:
       - id: ping
         uses: sisodiya2421/pinger@master
